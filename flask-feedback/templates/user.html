@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}{{user.username}}{% endblock %}
+{% block content %}
+    <h1>{{user.username}}</h1>
+    {% for msg in get_flashed_messages() %}
+        <p>{{msg}}</p>
+    {% endfor %}
+    <p>First Name:  {{user.first_name}}</p>
+    <p>Last Name:  {{user.last_name}}</p>
+    <p>Email:  {{user.email}}</p>
+    <hr />
+    {% for fb in user.feedback %}
+        <p id='{{fb.id}}'>{{fb.title}} - {{fb.content}}</p>
+        <a href='/feedback/{{fb.id}}/update'>Edit Feedback</a>
+        <form action='/feedback/{{fb.id}}/delete' method='POST'><button>Delete Feedback</button></form>
+        <hr />
+    {% endfor %}
+    <hr />
+    <a href='/users/{{user.username}}/feedback/add'>Add Feedback</a>
+    <hr />
+    <form action='/users/{{user.username}}/delete' method="POST"><button>Delete User</button></form>
+{% endblock %}

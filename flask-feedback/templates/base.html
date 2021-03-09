@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        {%block content%}{% endblock %}
+        <br>
+        {% if 'user' in session %}
+            <form action='/logout' method="POST"><button>Logout</button></form>
+        {% endif %}
+    </body>
+</html>

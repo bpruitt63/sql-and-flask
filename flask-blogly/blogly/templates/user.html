@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}{{user.full_name()}}{% endblock %}
+{% block content %}
+    <img src='{{user.image_url}}' alt='User Image' class='userimg'>
+    <div class='user'>
+        <h1>{{user.full_name()}}</h1>
+        <a href='/users/{{user.id}}/edit' class='edit'>Edit</a>
+        <form action='/users/{{user.id}}/delete' method="POST" class='deleteForm'>
+            <button class='delete'>Delete</button>
+        </form><br>
+    </div>
+    <div class='posts'>
+        <h3>Posts</h3>
+        <ul>
+            {% if user.posts %}
+                {% for post in user.posts %}
+                    <li class='userlist'>
+                        <a href="/posts/{{post.id}}">{{post.title}}</a>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <li>No Posts Yet</li>
+            {% endif %}
+        </ul><br>
+        <a href="/users/{{user.id}}/posts/new" class='edit'>Add Post</a>
+    </div>
+    <div class='return'>
+        <a href="/users" class='home'>Return to users</a>
+    </div>
+{% endblock %}

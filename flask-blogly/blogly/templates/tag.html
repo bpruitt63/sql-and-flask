@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{tag.name}}{% endblock %}
+{% block content %}
+    <h1>{{tag.name}}</h1>
+    <ul>
+        {% for post in tag.posts %}
+            <li class='userlist'><a href="/posts/{{post.id}}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul><br>
+    <a href="/tags" class='cancel' id='cancel3'>Cancel</a>
+    <a href='/tags/{{tag.id}}/edit' class='edit'>Edit</a>
+    <form action='/tags/{{tag.id}}/delete' method="POST" id='delete3'>
+        <button class='delete'>Delete</button>
+    </form>
+{% endblock %}

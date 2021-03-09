@@ -1,0 +1,193 @@
+.userimg {
+    width: 300px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.user {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.userlist {
+    margin-bottom: 5px;
+}
+
+.userlist a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.edit, .delete, .home, .add, .change, .cancel, .cancelPost {
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cancelPost {
+    background-color: skyblue;
+    padding: 6px 18px;
+    margin-left: 250px;
+}
+
+.cancelPost:hover {
+    background-color:  rgb(81, 130, 150);
+}
+
+.cancel {
+    padding: 4px 16px;
+    color: skyblue;
+    border: 2px solid skyblue;
+    margin-left: 160px;
+}
+
+.cancel2 {
+    margin-left: 230px;
+}
+
+.cancel:hover {
+    color:  rgb(81, 130, 150);
+    border: 2px solid rgb(81, 130, 150);
+}
+
+.change {
+    background-color: green;
+    margin-left: 300px;
+    font-size: 1.1em;
+    border: none;
+    padding: 6px 30px;
+}
+
+.change:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.change2 {
+    margin-left: 10px;
+}
+
+.edit {
+    background-color: blue;
+}
+
+.edit:hover {
+    background-color: darkblue;
+}
+
+.delete {
+    background-color: red;
+    border: none;
+}
+
+.delete:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.home {
+    background-color: purple;
+}
+
+.home:hover {
+    background-color: darkviolet;
+}
+
+.add {
+    background-color: darkslategray;
+}
+
+.add:hover {
+    background-color: grey;
+}
+
+.return {
+    margin-top: 40px;
+    margin-left: 350px;
+}
+
+.return2 {
+    margin-top: 40px;
+    margin-left: 220px;
+}
+
+.form {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form input {
+    font-size: 1.1em;
+    width: 400px;
+}
+
+.taglist {
+    margin: 10px -180px 5px -150px;
+}
+
+.deleteForm {
+    display: inline-block;
+}
+
+.posts {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 350px;
+}
+h3 {
+    font-size: 2.5em;
+    margin-bottom: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    margin-left: 30px;
+}
+
+.content {
+    vertical-align: 150%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+#cancel3 {
+    margin-left: 10px;
+    padding: 6px 16px;
+}
+
+#delete3 {
+    display: inline-block;
+}
+
+#postTitle {
+    margin-left: 10px;
+}
+
+#cancelEdit {
+    margin-left: 250px;
+}
+
+.tag {
+    background-color: blue;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.tag:hover {
+    background-color: darkblue;
+}
